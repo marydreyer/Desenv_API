@@ -1,0 +1,19 @@
+{
+  "name": "trab2",
+  "version": "1.0.0",
+  "description": "Trabalho CRUD e APIs",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "Mariana Dreyer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

@@ -1,0 +1,17 @@
+CREATE TABLE filmes (
+	id SERIAL NOT NULL PRIMARY KEY,
+	nome VARCHAR (60) NOT NULL,
+	diretor VARCHAR(60),
+	ator_principal VARCHAR(60),
+	ano INTEGER,
+	preco REAL NOT NULL
+);
+
+CREATE TABLE users (
+	id SERIAL NOT NULL PRIMARY KEY,
+	nome VARCHAR(60) NOT NULL,
+	email VARCHAR(60) NOT NULL,
+	login VARCHAR(15) NOT NULL,
+	senha VARCHAR(15) NOT NULL
+);
+
