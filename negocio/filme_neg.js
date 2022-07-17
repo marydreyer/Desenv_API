@@ -4,7 +4,7 @@ function inserir (filme, callback) {
     if(!filme || !filme.nome || !filme.diretor || !filme.ator_principal || !filme.ano || !filme.preco){
         const erro = { 
             mensagem: "Campos não preenchidos!",
-            numero: 400
+            numero: 400           
         };
         callback(erro, undefined)
     }
@@ -20,8 +20,8 @@ function listar (callback) {
 function buscarPorId(id, callback){
     if(!id || isNaN(id)){
         const erro = { 
-            mensagem: "Identificador Invalido!",
-            numero: 400
+            mensagem: "Id Invalido!",
+            numero: 400           
         }
         callback(erro, undefined);
     }
@@ -33,15 +33,15 @@ function buscarPorId(id, callback){
 function atualizar(id, filme, callback) {
     if(!id || isNaN(id)){
         const erro = { 
-            mensagem: "Identificador Invalido!",
-            numero: 400
+            mensagem: "Id Invalido!",
+            numero: 400            
         }
         callback(erro, undefined);
     }
     else if(!filme || !filme.nome || !filme.diretor || !filme.ator_principal || !filme.ano || !filme.preco) {
         const erro = { 
             mensagem: "Os campos devem ser preenchidos!",
-            numero: 400
+            numero: 400            
         };
         callback(erro, undefined)
     }
@@ -54,8 +54,8 @@ function atualizar(id, filme, callback) {
 function deletar(id, callback) {
     if(!id || isNaN(id)){
         const erro = { 
-            mensagem: "Identificador Invalido!",
-            numero: 400
+            mensagem: "Id Invalido!",
+            numero: 400           
         }
         callback(erro, undefined);
     }

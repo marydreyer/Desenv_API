@@ -1,10 +1,10 @@
 {
-  "name": "trab2",
+  "name": "trabalho_api",
   "version": "1.0.0",
   "description": "Trabalho CRUD e APIs",
-  "main": "main.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "Mariana Dreyer",

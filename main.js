@@ -102,7 +102,7 @@ cadastroUsers.inserir({nome: "Melina", email:"melina.dreyer@bol.com.br", login: 
     else{
         console.log(userInserido);
     }
-});
+});*/
 
 
 /// LISTAR USUÁRIOS ///
@@ -141,7 +141,7 @@ cadastroUsers.atualizar(2, {nome: "Laila", email:"lailacorrea@bol.com.br", login
 
 /// DELETAR USUARIO ///
 /*console.log("Deletar: ");
-cadastroUsers.deletar(10, function(erro, user) {
+cadastroUsers.deletar(3, function(erro, user) {
     console.log("Usuário deletado: ");
     if(erro) {
         console.log(erro);
