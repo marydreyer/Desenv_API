@@ -1,17 +1,22 @@
-CREATE TABLE filmes (
-	id SERIAL NOT NULL PRIMARY KEY,
-	nome VARCHAR (60) NOT NULL,
-	diretor VARCHAR(60),
-	ator_principal VARCHAR(60),
-	ano INTEGER,
-	preco REAL NOT NULL
-);
+--select * from filmes order by id asc;
+--select * from users order by id asc;
 
-CREATE TABLE users (
-	id SERIAL NOT NULL PRIMARY KEY,
-	nome VARCHAR(60) NOT NULL,
-	email VARCHAR(60) NOT NULL,
-	login VARCHAR(15) NOT NULL,
-	senha VARCHAR(15) NOT NULL
-);
+--drop table filmes;
+--drop table users;
 
+--CREATE TABLE filmes (
+	--id SERIAL NOT NULL PRIMARY KEY,
+	--nome VARCHAR (6) NOT NULL,
+	--diretor VARCHAR(60),
+	--ator_principal VARCHAR(60),
+	--ano INTEGER,
+	--preco REAL NOT NULL
+--);
+
+--CREATE TABLE users (
+	--id SERIAL NOT NULL PRIMARY KEY,
+	--nome VARCHAR(60) NOT NULL,
+	--email VARCHAR(60) NOT NULL,
+	--username VARCHAR(15) NOT NULL,
+	--senha VARCHAR(15) NOT NULL
+--);

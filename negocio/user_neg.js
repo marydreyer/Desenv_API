@@ -46,7 +46,7 @@ function atualizar(id, user, callback) {
         callback(erro, undefined)
     }
     else { 
-        userRepositorio.atualizar(id, filme, callback);
+        userRepositorio.atualizar(id, user, callback);
     }
 
 }

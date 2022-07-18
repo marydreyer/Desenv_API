@@ -1,26 +1,26 @@
 const userNegocio = require('../negocio/user_neg');
 
 exports.inserir = (req, res) => {
-    const filme = req.body;
+    const user = req.body;
   
-    filmeNegocio.inserir(filme, 
-      function(err, filmeInserido) {
+    userNegocio.inserir(user, 
+      function(err, userInserido) {
         if(err){
           res.status(err.numero).json({erro: err.mensagem});
         }
         else {
-          res.status(201).json(filmeInserido);
+          res.status(201).json(userInserido);
         }
       });  
 }
 
 exports.listar = (req, res) => {
-    filmeNegocio.listar(function (err, filme) {
+    userNegocio.listar(function (err, user) {
       if(err) {
         res.status(err.numero).json({erro: err.mensagem});
       }
       else {
-        res.json(filme);
+        res.json(user);
       }
     })
 }
@@ -28,38 +28,38 @@ exports.listar = (req, res) => {
 exports.buscarPorId = (req, res) => {
     const id = req.params.id;
 
-    filmeNegocio.buscarPorId(id, function (err, filme){
+    userNegocio.buscarPorId(id, function (err, user){
       if(err) {
         res.status(err.numero).json({erro: err.mensagem});
       }
       else {
-        res.json(filme);
+        res.json(user);
       }
     });
 }
 
 exports.atualizar = (req, res) => {
     const id = req.params.id;
-    const filme = req.body;
-    filmeNegocio.atualizar(id, filme, 
-      function(err, filmeAlterado) {
+    const user = req.body;
+    userNegocio.atualizar(id, user, 
+      function(err, userAlterado) {
         if(err){
           res.status(err.numero).json({erro: err.mensagem});
         }
         else {
-          res.json(filmeAlterado);
+          res.json(userAlterado);
         }
       });
 }
 
 exports.deletar = (req, res) => {
     const id = req.params.id;
-    filmeNegocio.deletar(id, function (err, filme){
+    userNegocio.deletar(id, function (err, user){
         if(err) {
           res.status(err.numero).json({erro: err.mensagem});
         }
         else {
-          res.json(filme);
+          res.json(user);
         }
       });
   }
