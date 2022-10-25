@@ -4,7 +4,8 @@
   "description": "Trabalho CRUD e APIs",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+     "test": "jasmine"
   },
   "keywords": [],
   "author": "Mariana Dreyer",
@@ -14,6 +15,7 @@
     "pg": "^8.7.3"
   },
   "devDependencies": {
+    "jasmine": "^4.4.0",
     "nodemon": "^2.0.19"
   }
 }
